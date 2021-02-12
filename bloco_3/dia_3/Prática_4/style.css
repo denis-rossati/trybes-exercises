@@ -13,3 +13,16 @@
   Dica 2: Sugestão de cores padrão. StackOverflow (laranja), W3Schools (verde), MDN (preta), DevDocs (amarela), Trybe (verde).
 
 */
+ol li {
+    background-color:yellow;
+}
+
+ol li.par{
+    color: green;
+}
+
+ol li.primo{
+    text-transform: uppercase;
+}
+
+
