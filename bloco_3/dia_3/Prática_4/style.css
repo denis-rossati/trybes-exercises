@@ -25,4 +25,56 @@ ol li.primo{
     text-transform: uppercase;
 }
 
+.header{
+    color:red;
+}
 
+em.header{
+    font-size: 40px;
+    border: 1px black solid;
+
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: 700;
+}
+
+.tflanguages{
+    color: blue;
+}
+
+.java{
+    background-color: pink;
+    padding: 1px;
+    margin-right: 420px;
+    padding-left: 3px;
+}
+
+.allys:hover{
+    font-weight: 700;
+
+}
+
+.ally1:hover{
+    text-decoration: none;
+    color:orange;
+}
+.ally2:hover{
+    color:green;
+}
+.ally3:hover{
+    color:black;
+}
+.ally4:hover{
+    color:yellow;
+}
+.ally5:hover{
+    color: green;
+}
+a:hover {
+    color: inherit;
+}
