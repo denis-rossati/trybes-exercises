@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+.top-header{
+    background-color:#006D77;
+    color: white;
+    font-family: "Monteserrat", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.nav-links ul li{
+    display: inline;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px;
+}
