@@ -14,7 +14,27 @@
 
 .nav-links ul li{
     display: inline;
-    text-align: center;
     font-family: "Montserrat", sans-serif;
     padding: 30px;
 }
+
+.nav-links ul a{
+    text-decoration: none;
+    color:#EDF6F9;
+}
+
+.nav-links ul a:hover{
+    font-weight: 1000;
+}
+
+.nav-links{
+    background-color: #83C5BE;
+    text-align: center;
+}
+
+.nav-links ul{
+    padding: 12px 0;
+}
+
+/*---*/
+
