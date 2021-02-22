@@ -9,6 +9,9 @@
     font-family: "Monteserrat", sans-serif;
     font-weight: 200;
     text-align: center;
+}
+
+.top-header h1{
     padding: 20px 0 20px 0;
 }
 
@@ -83,7 +86,7 @@ body{
 }
 
 .media{
-    margin: 20px 0 5px 0;
+    margin: 30px 0 10px 0;
     width: 500px;
     display: block;
     margin-left: auto;
@@ -94,6 +97,66 @@ body{
     color: #333333;
     font-family: "Roboto Slab", sans-serif;
     font-style: italic;
-    margin: 0px 0px 0px 10px;
+}
+
+.coment{
+    display: block;
     text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+/*----*/
+
+.bibliographic-ref{
+    margin: 0 20%;
+    font-family: "Roboto Slab", sans-serif;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.bibliographic-ref ul{
+    list-style-type: none;
+    border-left: 5px solid #101935;
+    margin: 20px 20px 10px 20px;
+    padding-left: 20px;
+}
+
+.bibliographic-ref li{
+    line-height: 30px;
+}
+
+.bibliographic-ref a{
+    text-decoration: none;
+    color:#101935
+}
+
+.bibliographic-ref a:hover{
+    color: black;
+}
+
+/*--------*/
+.mantis-ilustration{
+    width:90%;
+    padding-top: 20px;
+}
+
+.aside-element{
+    font-family: "Roboto Slab", sans-serif;
+    border: 2px black solid;
+    max-width: 15%;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    float: right;
+    margin: 90% 1% 0% 0%;
+}
+
+/*-------*/
+
+.ending{
+    text-align: center;
+    background-color: #333333;
+    color: lightgray;
+    font-family: "Roboto Slab", sans-serif;
+    margin-top: 2%;
+    padding: 5px 0;
 }
