@@ -19,6 +19,6 @@ else if (percent>=50 && percent<60){
 else if (percent<50){
     console.log ("F")
 }
-else {
-    console.log("erro");
+else if (percent<0 || percent>100{
+    console.log("erro.");
 }
