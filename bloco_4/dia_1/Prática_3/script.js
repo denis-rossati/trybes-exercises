@@ -1,4 +1,4 @@
-let studentGrade =50;
+let studentGrade =69;
 
 if (studentGrade >80) {
     console.log ("Paranbéns, você foi aprovado.")
