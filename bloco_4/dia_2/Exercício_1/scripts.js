@@ -88,4 +88,5 @@ for (let i = 0; i < array125.length; i++){
     divisao.push((array125[i])/2);
     console.log ( array125[i]+"/2 = "+divisao[i]);
 }
+
 //-----
