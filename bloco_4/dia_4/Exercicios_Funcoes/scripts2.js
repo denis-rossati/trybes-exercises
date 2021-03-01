@@ -1,15 +1,19 @@
-function lowestNumber(arrayOfNumbers){
+function biggestNumber(arrayOfNumbers){
 
-  let lowestNumberIndice = arrayOfNumbers[0];
+  let biggestNumberIndice = 0;
 
-  for (let counter = 1; counter < arrayOfNumbers.length; counter += 1){
+  let numberForTests = arrayOfNumbers[0];
 
-    if (lowestNumberIndice < (arrayOfNumbers[counter])){
-      lowestNumberIndice = counter;
+  for (let counter = 0; counter < arrayOfNumbers.length; counter += 1){
+
+    if (numberForTests < (arrayOfNumbers[counter])){
+
+      numberForTests = arrayOfNumbers[counter];
+
+      biggestNumberIndice = [counter];
 
     }
   }
-    console.log ("o menor numero fica no indice: " + lowestNumberIndice);
+    console.log ("o maior numero fica no indice: " + biggestNumberIndice);
 }
-
-lowestNumber([2, 3, 6, 7, 10, 1, 28]);
+biggestNumber([2, 3, 10, 512, 13, 17]);
