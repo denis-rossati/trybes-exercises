@@ -1,4 +1,4 @@
-function biggestNumber(arrayOfNumbers){
+function lowestNumber(arrayOfNumbers){
 
   let biggestNumberIndice = 0;
 
@@ -16,4 +16,4 @@ function biggestNumber(arrayOfNumbers){
   }
     console.log ("o maior numero fica no indice: " + biggestNumberIndice);
 }
-biggestNumber([2, 3, 10, 512, 13, 17]);
+lowestNumber([2, 3, 10, 512, 13, 17]);
