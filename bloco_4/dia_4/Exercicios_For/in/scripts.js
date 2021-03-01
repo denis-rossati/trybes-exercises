@@ -13,11 +13,14 @@ let info2 = {
   recorrente: "Sim",
 };
 
+/*
 console.log ("Bem-vinda, " + info.personagem);
+*/
 
 //adiciona uma propriedade ao objeto
 info.recorrente = "Sim";
 
+/*
 console.log (info)
 
 //um for in que itera as chaves do objeto da margarida
@@ -29,6 +32,7 @@ for (let index in info){
 for (let index in info){
   console.log (info[index]);
 }
+*/
 
 //itera elementos dos objetos da margarida e do tio patinhas
 for (let index in info){
