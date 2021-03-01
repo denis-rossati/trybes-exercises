@@ -5,3 +5,9 @@ let info = {
 };
 
 console.log ("Bem-vinda, " + info.personagem);
+
+info.recorrente = "Sim";
+
+for (let index in info){
+  console.log (index);
+}
