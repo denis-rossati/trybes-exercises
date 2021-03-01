@@ -34,6 +34,7 @@ function invertWords(word){
     console.log ("não é um palindromo");
   } else {
     console.log ("é um palindromo")
+    
   }
 
 }
