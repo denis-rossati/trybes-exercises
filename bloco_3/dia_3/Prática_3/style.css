@@ -1,0 +1,19 @@
+h1, p {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover {
+    background-color: black;
+    color:white;
+}
+li:active{
+    font-family: monospace;
+}
+ul, ol{
+    list-style: none;
+}
