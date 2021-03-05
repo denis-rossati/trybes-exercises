@@ -96,11 +96,15 @@
       for (let counter = 0; counter < 10; counter += 1){
         let arrayExtenso = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
         let createLi = document.createElement("li");
-      document.querySelector("ul").appendChild(createLi);
-      createLi.innerText = (arrayExtenso[counter]);
+        document.querySelector("ul").appendChild(createLi);
+        createLi.innerText = (arrayExtenso[counter]);
       }
 
       /*  9  */
-</script>
+      for (let i = 0; i < 3; i += 1){
+        docDivMain.appendChild(document.createElement("h3"));
+      }
+
+    </script>
   </body>
 </html>
