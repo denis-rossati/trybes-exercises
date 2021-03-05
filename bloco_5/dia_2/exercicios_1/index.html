@@ -58,11 +58,32 @@
   <body>
     <script>
       // COLOQUE SEU CÓDIGO AQUI
+     /*   1  */
       let docBody = document.body;
       let docH1 = document.createElement("h1");
       docBody.appendChild(docH1);
       docH1.innerText = "Exercício 5.2 - JavaScript";
 
+     /*  2  */
+      let docDivMain = document.createElement("div");
+      docBody.appendChild(docDivMain);
+      docDivMain.className = "main-content";
+
+     /*  3  */
+      let docDivCenter = document.createElement("div");
+      document.getElementsByClassName("main-content")[0].appendChild(docDivCenter);
+     
+      /*  4  */
+      let docP = document.createElement("p");
+      docDivCenter.appendChild(docP);
+     
+      /*  5  */
+      document.getElementsByClassName("main-content")[0].appendChild(document.createElement("div"));
+      document.getElementsByTagName("div")[2].className = "left-content";
+
+      /*  6  */
+      document.querySelector("div").appendChild(document.createElement("div")).className = "rigth-content";
+      document.
     </script>
   </body>
 </html>
