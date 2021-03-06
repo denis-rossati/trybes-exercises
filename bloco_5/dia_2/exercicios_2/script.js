@@ -29,14 +29,16 @@ function addDaysOfMonth() {
       document.querySelectorAll("li")[((8 + x))].className = "day friday";
     }    
 
-    if ((x == 26) || (x == 33)) {
-      document.querySelectorAll("li")[((8 + x))].className = "day holiday";
+    if ((x == 26)) {
+      document.querySelectorAll("li")[(8 + x)].className = "day holiday";
     } 
 
     if ((x == 27)) {
       document.querySelectorAll("li")[((8 + x))].className = "day friday holiday";
     }
   }
+  let ulRejectedChild = document.getElementById("days");
+  ulRejectedChild.lastChild.className = "day holiday";
 }
 addDaysOfMonth();
 
@@ -48,3 +50,25 @@ function holidays(string) {
   docButton.id = "btn-holiday"
 }
 holidays('Feriados')
+
+function changeColors(){
+  let docButton = document.querySelectorAll("button")[0];
+  let docHolidays = document.querySelectorAll(".holiday");
+  let backgroundGreen = "lightGreen";
+
+  docButton.addEventListener("click", function(){
+    for (let x = 0; x < docHolidays.length; x += 1) {
+      docHolidays[x].style.backgroundColor = backgroundGreen;
+    }
+  })
+}
+changeColors();
+
+function btnFriday(string) {
+  let docButton = document.createElement("button");
+  let getButton = document.getElementsByClassName("buttons-container")[0];
+  getButton.appendChild(docButton);
+  docButton.innerText = string;
+}
+btnFriday("Sexta-feira");
+
