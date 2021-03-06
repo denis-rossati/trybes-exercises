@@ -130,3 +130,20 @@ function eventClass() {
 
 }
 eventClass();
+
+function changeDateColor() {
+  let selectDiv = document.getElementsByClassName('selected');
+  let daysSelect = document.querySelector('#days');
+  let taskSelected = document.querySelector('.task');
+  let taskColor= taskSelected.style.backgroundColor;
+  days.addEventListener("click", function(event) {
+    eventTargetColor = event.target.style.color;
+    if (selectDiv.length > 0 && eventTargetColor != taskColor){
+      let color = selectDiv[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (event.target.style.color == taskColor && selectDiv.length > 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  })
+}
+changeDateColor();
