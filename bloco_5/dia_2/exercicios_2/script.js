@@ -119,4 +119,14 @@ function cor(cor) {
 }
 cor('#77DD77')
 
+function eventClass() {
+  let docDiv = document.querySelector(".task");
+  docDiv.addEventListener("click", function(){
+    docDiv.className = "task selected"
+    docDiv.addEventListener("click", function(){
+      docDiv.className = "task"
+    })
+  })
 
+}
+eventClass();
