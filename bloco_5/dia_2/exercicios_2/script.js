@@ -40,5 +40,11 @@ function addDaysOfMonth() {
 }
 addDaysOfMonth();
 
-
-
+function holidays(string) {
+  let docButton = document.createElement("button");
+  let docButtonContainer = document.querySelector(".buttons-container")
+  docButton.innerText = string;
+  docButtonContainer.appendChild(docButton); 
+  docButton.id = "btn-holiday"
+}
+holidays('Feriados')
