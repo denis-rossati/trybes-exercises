@@ -69,6 +69,54 @@ function btnFriday(string) {
   let getButton = document.getElementsByClassName("buttons-container")[0];
   getButton.appendChild(docButton);
   docButton.innerText = string;
+  docButton.id = "btn-friday"
 }
 btnFriday("Sexta-feira");
+
+function modifyText(string) {
+  let fridayArray = document.getElementsByClassName("friday");
+  document.getElementsByTagName("button")[1].addEventListener("click", function(){
+    for (let x = 0; x < fridayArray.length; x += 1) {
+      document.getElementsByClassName("friday")[x].innerText = string;
+    }
+  })
+}
+modifyText("Sextooou!!");
+
+function Zoom() {
+  let docDay = document.querySelector('#days');
+  docDay.addEventListener("mouseover", function(event){
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeigth = '800';
+  })
+
+}
+function ZoomOut() {
+    let docDay = document.querySelector('#days');
+  docDay.addEventListener("mouseout", function(event){
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeigth = '200';
+  })
+}
+Zoom();
+ZoomOut();
+
+function compromises(string) {
+  docSpan = document.createElement("span");
+  let docDiv = document.getElementsByClassName("my-tasks")[0]
+  docDiv.appendChild(docSpan);
+  docSpan.innerText = string;
+
+}
+compromises('stringaleatoria');
+
+function cor(cor) {
+  let docDiv = document.createElement("div");
+  docDiv.className = "task";
+  let docDiv2 = document.querySelector(".my-tasks");
+  docDiv2.appendChild(docDiv);
+  docDiv.style.backgroundColor = cor;
+}
+cor('#77DD77')
+
 
