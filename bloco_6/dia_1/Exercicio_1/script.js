@@ -54,16 +54,16 @@ function separeYearDateString() {
 }
 
 function getDateComplete() {
+  let dateValue = '';
   getDate.addEventListener('keyup', () => {
     separeDayDateString();
     separeMonthDateString();
     separeYearDateString();
-    console.log(day + '/' + month + '/' + year);
-  })
-} 
-
-function inputDate() {
-
+    dateValue = (day + '/' + month + '/' + year);
+    if(dateValue.length == 10) {
+      getDate.value = dateValue;
+    }
+  });
 }
 
 window.onload = () => {
