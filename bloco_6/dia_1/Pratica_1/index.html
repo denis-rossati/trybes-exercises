@@ -5,25 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
-  <form method="GET">
-    <label for="email">
-      <input type="email" id= "email" name="email" href="Insira o e-mail" autofocus autocomplete="off" required>
-    </label>
-    <br>
-    <label for="senha">
-      <input type="password" id= "senha" href="Insira a senha" name="senha" required>
-    </label>
-    <br>
-    <label for="lembrarsenha">
-      <input type="checkbox" id="lembrarsenha" value="Lembrar a senha?">Lembrar a senha?
-    </label>
-    <br>
-    <label for="">
-      <button type="submit">Entrar</button>
-    </label>
-  </form>
+  <div id = "divmother">
+    <form method="GET">
+      <label for="email"> Email:
+        <input type="email" id= "email" name="email" href="Insira o e-mail" autofocus autocomplete="off" required>
+      </label>
+      <br>
+      <label for="senha"> Senha:
+        <input type="password" id= "senha" href="Insira a senha" name="senha" required>
+      </label>
+      <br>
+      <label for="lembrarsenha">
+        <input type="checkbox" id="lembrarsenha" value="Lembrar a senha?">Lembrar a senha?
+      </label>
+      <br>
+      <label for="">
+        <button id= "button" type="submit">Entrar</button>
+      </label>
+    </form>
+  </div>
 </body>
 </html>
