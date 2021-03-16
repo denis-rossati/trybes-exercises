@@ -11,23 +11,23 @@
   <form method="GET">
     <fieldset>
       <label for="name">Nome:
-        <input type="text" maxlength= "40" name= "name" required>
+        <input type="text" id = 'name' maxlength= "40" name= "name" required>
       </label>
       <br>
       <label for="email">Email:
-        <input type="texto" maxlength= "50" name= "email" required>
+        <input type="texto" id = 'email' maxlength= "50" name= "email" required>
       </label>
       <br>
       <label for="cpf">CPF:
-        <input type="text" maxlength="11" name= "cpf" required>
+        <input type="text" id = 'cpf' maxlength="11" name= "cpf" required>
       </label>
       <br>
       <label for="adress">Endereço:
-        <input type="text" maxlength="200" name= "adress" required>
+        <input type="text" id= "endereco" maxlength="200" name= "adress" required>
       </label>
       <br>
       <label for="city">Cidade:
-        <input type="text" maxlength="28" name= "city" required>
+        <input type="text" id= "city" maxlength="28" name= "city" required>
       </label>
       <br>
       <label for="state">Estado:
@@ -36,10 +36,9 @@
       </label>
       <br>
       <label for="home">
-        <legend>Moradia:</legend>
-        Casa<input type="radio" name='home' id='casa' required>
+        <input type="radio" name='home' id='casa' value="casa" required checked>Casa
         <br>
-        Apartamento<input type="radio" name='home' id='apartamento' required>
+        <input type="radio" name='home' id='apartamento' value="apartamento" required>Apartamento
       </label>
     </fieldset>
     <fieldset>
@@ -49,7 +48,7 @@
       </label>
       <br>
       <label for="cargo">Cargo:
-        <input type="text" name="cargo" maxlength="40" required>
+        <input type="text" id= "cargo" name= "cargo" maxlength="40" required>
       </label>
       <p>Descrição do cargo:</p>
       <label for="cargDescription">
@@ -60,7 +59,7 @@
         <input type="text" name="initDate" placeholder="dd/mm/aaaa" maxlength= "10" minlength="10" id="date" required>
       </label>
     </fieldset>
-    <button type="submit">Submit</button>
+    <button type="submit" id = "botao">Submit</button>
   </form>
   <script src="script.js"></script>
 </body>

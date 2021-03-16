@@ -5,9 +5,13 @@ let estados = ['AC - Acre', 'AL - Alagoas', 'AP - Amapá', 'AM - Amazonas',
  'RJ - Rio de Janeiro', 'RN - Rio Grande do Norte', 'RS - Rio Grande do Sul', 'RO - Rondônia',
   'RR - Roraíma', 'SC - Santa Catarina', 'SP - São Paulo', 'SE - Sergipe', 'TO - Tocantins'];
 const getDate = document.getElementById('date');
+const botao = document.getElementById('botao');
+let curriculumElements = ['Nome: ', 'Email: ', 'CPF: ', 'Endereço: ', 'Cidade: ', 'Estado: ', 'Moradia: ', 'Resumo: ', 'Cargo: ', 'Descrição: ', 'Data de início: '];
 let day = '';
 let month = '';
 let year = '';
+let info = {}
+
 
 function insertStates() {
   for (let counter = 0; counter < estados.length; counter += 1) {
@@ -66,7 +70,51 @@ function getDateComplete() {
   });
 }
 
+function getValues() {
+  info.nome = document.getElementById('name').value;
+  info.email = document.getElementById('email').value;
+  info.cpf = document.getElementById('cpf').value;
+  info.adress = document.getElementById('endereco').value;
+  info.city = document.getElementById('city').value;
+  info.state = document.getElementById('state').value;
+  info.home = (getRadioValue());
+  info.curriculumResume = document.getElementById('resume').value;
+  info.cargo = document.getElementById('cargo').value;
+  info.cargDesc = document.getElementById('cargDescription').value;
+  info.date = document.getElementById('date').value;
+}
+
+function getRadioValue() {
+  let choiceHome = '';
+  document.getElementById('casa').addEventListener('click', () => {
+    choiceHome = (document.getElementById('casa').value);
+  })
+  document.getElementById('apartamento').addEventListener('click', () => {
+    choiceHome = (document.getElementById('apartamento').value);
+  })
+  return(choiceHome);
+}
+
+function addCurriculum() {
+  for (let key = 0; key < 11; key += 1) {
+    document.getElementById('Cdiv').appendChild(document.createElement('p'));
+    document.getElementById('Cdiv').lastChild.innerText = curriculumElements[key] + info[key] ;
+  }
+}
+
+function clickButton() {
+  let curriculumDiv = (document.createElement('div'));
+  botao.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    getValues();
+    document.body.appendChild(curriculumDiv);
+    curriculumDiv.id = 'Cdiv';
+    addCurriculum();
+  });
+}
+
 window.onload = () => {
   insertStates();
   getDateComplete();
+  clickButton();
 }
