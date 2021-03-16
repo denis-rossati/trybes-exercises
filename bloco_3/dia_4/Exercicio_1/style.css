@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+.top-header{
+    background-color:#006D77;
+    color: white;
+    font-family: "Monteserrat", sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.top-header h1{
+    padding: 20px 0 20px 0;
+}
+
+.nav-links ul li{
+    display: inline;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px;
+}
+
+.nav-links ul a{
+    text-decoration: none;
+    color:#EDF6F9;
+}
+
+.nav-links ul a:hover{
+    font-weight: 1000;
+}
+
+.nav-links{
+    background-color: #83C5BE;
+    text-align: center;
+}
+
+.nav-links ul{
+    padding: 12px 0;
+}
+
+/*---*/
+body{
+    background-color: #EDF6F9;
+}
+
+.main-content {
+    margin-left: 20%;
+    margin-right:20%;
+}
+
+.main-content h2{
+    margin: 25px 0px 0px 0px;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+.main-content h3 {
+    border-left: 5px solid #FF4754;
+    padding: 0px 20px;
+    font-size: 30px ;
+}
+
+.h3-container{
+    padding: 20px 0;
+}
+
+.main-content p{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.table{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0px 30px 0px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+}
+.table tr td{
+    border: 1px solid black;
+    padding: 2px 4px 2px 4px;
+}
+
+.media{
+    margin: 30px 0 10px 0;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coment{
+    color: #333333;
+    font-family: "Roboto Slab", sans-serif;
+    font-style: italic;
+}
+
+.coment{
+    display: block;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+/*----*/
+
+.bibliographic-ref{
+    margin: 0 20%;
+    font-family: "Roboto Slab", sans-serif;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.bibliographic-ref ul{
+    list-style-type: none;
+    border-left: 5px solid #101935;
+    margin: 20px 20px 10px 20px;
+    padding-left: 20px;
+}
+
+.bibliographic-ref li{
+    line-height: 30px;
+}
+
+.bibliographic-ref a{
+    text-decoration: none;
+    color:#101935
+}
+
+.bibliographic-ref a:hover{
+    color: black;
+}
+
+/*--------*/
+.mantis-ilustration{
+    width:90%;
+    padding-top: 20px;
+}
+
+.aside-element{
+    font-family: "Roboto Slab", sans-serif;
+    border: 2px black solid;
+    max-width: 15%;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    float: right;
+    margin: 90% 1% 0% 0%;
+}
+
+/*-------*/
+
+.ending{
+    text-align: center;
+    background-color: #333333;
+    color: lightgray;
+    font-family: "Roboto Slab", sans-serif;
+    margin-top: 2%;
+    padding: 5px 0;
+}
