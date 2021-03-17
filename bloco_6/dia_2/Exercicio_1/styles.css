@@ -1,0 +1,31 @@
+body {
+  background-color: aliceblue;
+}
+
+.editable {
+  max-width: fit-content;
+  padding: 2%;
+  background-color: white;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+.inputText {
+ min-width: 100%;
+}
+
+.button-class {
+  max-width: fit-content;
+  margin: 10px auto;
+}
+
+.buttonOne {
+  margin-right: 15px;
+}
+
+.buttonTwo {
+  margin-left: 15px;
+}

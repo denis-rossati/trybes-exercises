@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form method="GET">
+    <fieldset>
+      <label for="name">Nome:
+        <input type="text" id = 'name' maxlength= "40" name= "name" required>
+      </label>
+      <br>
+      <label for="email">Email:
+        <input type="texto" id = 'email' maxlength= "50" name= "email" required>
+      </label>
+      <br>
+      <label for="cpf">CPF:
+        <input type="text" id = 'cpf' maxlength="11" name= "cpf" required>
+      </label>
+      <br>
+      <label for="adress">Endereço:
+        <input type="text" id= "endereco" maxlength="200" name= "adress" required>
+      </label>
+      <br>
+      <label for="city">Cidade:
+        <input type="text" id= "city" maxlength="28" name= "city" required>
+      </label>
+      <br>
+      <label for="state">Estado:
+        <select name="state" id="state" required>
+        </select>
+      </label>
+      <br>
+      <label for="home">
+        <input type="radio" name='home' id='casa' value="casa" required checked>Casa
+        <br>
+        <input type="radio" name='home' id='apartamento' value="apartamento" required>Apartamento
+      </label>
+    </fieldset>
+    <fieldset>
+      <p>Resumo do currículo:</p>
+      <label for="curriculumResume">
+        <textarea name="curriculumResume" placeholder="Descreva seu curriculo em 1000 caracteres ou menos."maxlength= '1000' id="resume" cols="40" rows="15" required></textarea>
+      </label>
+      <br>
+      <label for="cargo">Cargo:
+        <input type="text" id= "cargo" name= "cargo" maxlength="40" required>
+      </label>
+      <p>Descrição do cargo:</p>
+      <label for="cargDescription">
+        <textarea name="cargDescription" id="cargDescription" placeholder="Descreva seu último cargo em 500 caracteres ou menos." cols="40" rows="15" required maxlength="500"></textarea>
+      </label>
+      <br>
+      <label for="initDate">Data de início:
+        <input type="text" name="initDate" placeholder="dd/mm/aaaa" maxlength= "10" minlength="10" id="date" required>
+      </label>
+    </fieldset>
+    <button type="submit" id = "botao">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
