@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Justify Content</title>
+    <style>
+      .box {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 50px;
+        height: 60px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 20%;
+      }
+
+      .box-container {
+        background-color: #0fa36b;
+        display: flex;
+        /* ADICIONE AQUI SEUS TESTES */
+        /* alinha os elementos no centro do container de acordo com o main axis
+        justify-content:center; */
+        /* agrupa os elementos no fim do main axis
+        justify-content: flex-end; */
+        /* agrupa os elementos no inicio do main axis
+        justify-content: flex-start;  */
+        /* agrupa os itens de forma que haja um espaço igual entre eles, com as extremidade valendo metade desse espaço
+        justify-content: space-around; */
+        /* agrupa os itens com espaços iguais entre eles, deixando as extremidades grudadas no fim e inicio do main axis
+        justify-content: space-between; */
+        /* agrupa os itens com espaços iguais tanto entre eles quanto nas extremidades
+        justify-content: space-evenly; */
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>
