@@ -27,14 +27,18 @@
 @media screen and (min-width: 769px) {
   body {
     background-color: rgb(228, 234, 236);
+    margin: 0 50px;
   }
+
   h1 {
-  
+    font-size: xxx-large;
+text-align: center;
   }
-  h2 {
-  
+
+  p, figcaption {
+    font-size: 35px;
+    line-height: 50px;
   }
-  
   img {
       max-width: 100%;
   }
