@@ -67,6 +67,36 @@ text-align: center;
 @media screen and (min-width: 1694px) {
   body {
     background-color: rgb(250, 229, 248);
-    margin: 0 10%;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  h1, h2 {
+    font-size: xxx-large;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto;
+    font-size: 45px;
+    line-height: 80px;
+  }
+
+  img {
+    width: 20vw;
+    border-radius: 20px;
+  }
+
+  figure  {
+    font-size: 25px;
+    width: fit-content;
+  }
+
+    div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
+
