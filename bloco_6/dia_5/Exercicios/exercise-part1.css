@@ -63,3 +63,9 @@ text-align: center;
     justify-content: center;
   }
 }
+
+@media screen and (min-width: 1694px) {
+  body {
+    margin: 0 10%;
+  }
+}
