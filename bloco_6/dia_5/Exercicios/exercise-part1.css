@@ -1,24 +1,45 @@
-body {
+@media screen and (max-width: 768px) {
+  body {
     font-size: 20px;
     margin: 0 5%;
     text-align: center;
-}
-h1 {
+  }
+  h1 {
     font-size: 25px;
     text-align: center;
     border: 1px black solid;
     padding : 5px;
     margin: 5% 10%;
-}
-h2 {
+  }
+  h2 {
     opacity: 0.8;
-}
+  }
 
-img {
+  img {
     max-width: 100%;
-}
+  }
 
-figure {
+  figure {
     margin: 50px 0;
+  }
 }
 
+@media screen and (min-width: 769px) {
+  body {
+
+  }
+  h1 {
+  
+  }
+  h2 {
+  
+  }
+  
+  img {
+      max-width: 100%;
+  }
+  
+  figure {
+      margin: 0;
+  }
+}
