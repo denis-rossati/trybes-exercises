@@ -66,6 +66,7 @@ text-align: center;
 
 @media screen and (min-width: 1694px) {
   body {
+    background-color: rgb(250, 229, 248);
     margin: 0 10%;
   }
 }
