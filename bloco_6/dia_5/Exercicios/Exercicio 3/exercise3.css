@@ -93,4 +93,10 @@
   #footer {
     display: none;
   }
+
+  #content, #aside{
+    float: none;
+    width: fit-content;
+  }
+
 }
