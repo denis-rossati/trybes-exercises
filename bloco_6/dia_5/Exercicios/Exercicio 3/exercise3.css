@@ -121,7 +121,12 @@
 
   #navigation {
     display: block;
-    margin: 10px 5vw;
+    margin: 90px 5vw 0 5vw;
     width: 90vw;
+  }
+  
+  #header {
+    position: fixed;
+    width: 100vw;
   }
 }
