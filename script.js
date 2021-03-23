@@ -1,4 +1,4 @@
-const fatorialNumber = number => {
+/* const fatorialNumber = number => {
   let arrayNumbers = [];
   let result = 1;
   for (let counter = 1; counter <= number; counter +=1) {
@@ -11,5 +11,17 @@ const fatorialNumber = number => {
   }
   return result;
 }
+fatorialNumber(5); */
 
-fatorialNumber(5);
+/* const biggestWord = string => {
+  let arrayWords = string.split(' ');
+  let sizeWord = arrayWords[0];;
+  for (let x = 0; x < arrayWords.length; x += 1) {
+    if(sizeWord.length < arrayWords[x].length) {
+      sizeWord = arrayWords[x];
+    }
+
+    console.log(sizeWord);
+  }
+}
+biggestWord("Antônio foi no banheiro e não sabemos o que aconteceu") */
