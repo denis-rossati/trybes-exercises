@@ -28,9 +28,7 @@ biggestWord("Antônio foi no banheiro e não sabemos o que aconteceu") */
 
 const botao = document.getElementById('botao');
 const contador = document.getElementById('contador');
-if (localStorage.clicadas == undefined) {
-  localStorage.clicadas = 0;
-}
+localStorage.clicadas == undefined ? localStorage.clicadas = 0 : console.log('de boa');
 contador.innerText = (localStorage.clicadas);
 let clickCounter = Number(localStorage.clicadas);
 botao.addEventListener('click', () => {
