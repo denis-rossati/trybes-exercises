@@ -25,3 +25,15 @@ fatorialNumber(5); */
   }
 }
 biggestWord("Antônio foi no banheiro e não sabemos o que aconteceu") */
+
+const botao = document.getElementById('botao');
+const contador = document.getElementById('contador');
+if (localStorage.clicadas == undefined) {
+  localStorage.clicadas = 0;
+}
+contador.innerText = (localStorage.clicadas);
+let clickCounter = Number(localStorage.clicadas);
+botao.addEventListener('click', () => {
+  contador.innerText = clickCounter += 1
+  localStorage.clicadas = Number(contador.innerText);
+});
