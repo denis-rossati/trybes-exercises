@@ -3,7 +3,7 @@ const criarObjeto = (objeto, chave, valor) => {
   objeto = {
   }
   objeto[chave] = valor;
-  console.log(objeto);
+  return objeto;
 }
 
 criarObjeto('const obj', 'nome', 'denis')
