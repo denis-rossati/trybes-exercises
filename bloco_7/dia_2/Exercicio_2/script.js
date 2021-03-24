@@ -43,3 +43,8 @@ const sizeObject = objeto => {
 sizeObject(lesson1);
 
 //requisito 4
+const objectsValues = objeto => {
+  return Object.values(objeto);
+}
+
+console.log(objectsValues(lesson1))
