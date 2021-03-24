@@ -36,4 +36,11 @@ botao.addEventListener('click', () => {
   localStorage.clicadas = Number(contador.innerText);
 }); */
 
-const stringFunction = string => { }
+const stringFunction = string => {
+  let stringX = "Finalmente, achamos o X enterrado!"
+  let stringArray = stringX.split('X')
+  let stringComplete = `${stringArray[0]}${string}${stringArray[1]}`
+  return stringComplete;
+}
+
+stringFunction('tesouro')
