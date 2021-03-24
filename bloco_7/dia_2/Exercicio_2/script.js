@@ -1,4 +1,3 @@
-const allLessons = {};
 const lesson1 = {
   materia: 'Matemática',
   numeroEstudantes: 20,
@@ -19,9 +18,6 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const agroupLesson1 = {lesson1};
-const agroupLesson2 = {lesson2};
-const agroupLesson3 = {lesson3};
 
 //requisito 1
 const addTurnLesson2 = (modify, key, value) => {
@@ -40,23 +36,35 @@ for (let contador = 1; contador < 4; contador += 1) {
 }
 
 //requisito 3
-const sizeObject = objeto => Object.keys(objeto).length
+const sizeObject = objeto => Object.keys(objeto).length;
 sizeObject(lesson1);
 
 //requisito 4
-const objectsValues = objeto => Object.values(objeto)
+const objectsValues = objeto => Object.values(objeto);
 objectsValues(lesson1);
 
 //requisito 5
-const agroupObjects = () => Object.assign(allLessons, agroupLesson1, agroupLesson2, agroupLesson3)
+const allLessons = {};
+const agroupObjects = () => {
+  const agroupLesson1 = {lesson1};
+  const agroupLesson2 = {lesson2};
+  const agroupLesson3 = {lesson3};
+  return agroupLesson1
+  Object.assign(allLessons, agroupLesson1, agroupLesson2, agroupLesson3);
+}
 agroupObjects();
 
-const numberOfStudents = () => allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson1.numeroEstudantes
+//requisito 6
+const numberOfStudents = () => lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson1.numeroEstudantes;
 numberOfStudents()
 
-//requisito 6
+//requisito 7
 const showKey = (object, position) => {
   const keysObject = Object.values(object);
   return keysObject[position];
 }
 showKey(lesson1, 0);
+
+//requisito 8
+const findAtribute = (object, key, value) => (object[key] === value) ? true : false;
+findAtribute(lesson1, 'turno', 'manhã');
