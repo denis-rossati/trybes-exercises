@@ -33,5 +33,13 @@ const listKeys = (objeto) => {
 }
 for (let contador = 1; contador < 4; contador += 1) {
   let parametro = `lesson${contador}`
-  console.log(listKeys(eval(parametro)))
+  listKeys(eval(parametro))
 }
+
+//requisito 3
+const sizeObject = objeto => {
+  return Object.keys(objeto).length;
+}
+sizeObject(lesson1);
+
+//requisito 4
