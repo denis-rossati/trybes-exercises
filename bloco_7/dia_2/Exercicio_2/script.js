@@ -29,7 +29,8 @@ const addTurnLesson2 = (modify, key, value) => {
 addTurnLesson2(lesson2, Object.keys(lesson1)[3], Object.values(lesson1)[3]);
 
 //requisito 2
-const listKeys = (objeto) => { Object.keys(objeto) }
+const listKeys = (objeto) => Object.keys(objeto);
+
 for (let contador = 1; contador < 4; contador += 1) {
   let parametro = `lesson${contador}`;
   listKeys(eval(parametro));
@@ -46,16 +47,17 @@ objectsValues(lesson1);
 //requisito 5
 const allLessons = {};
 const agroupObjects = () => {
-  const agroupLesson1 = {lesson1};
-  const agroupLesson2 = {lesson2};
-  const agroupLesson3 = {lesson3};
-  return agroupLesson1
-  Object.assign(allLessons, agroupLesson1, agroupLesson2, agroupLesson3);
+  const agroupLesson1 = {
+    lesson1,
+    lesson2, 
+    lesson3,
+  }
+  return Object.assign(allLessons, agroupLesson1);
 }
 agroupObjects();
 
 //requisito 6
-const numberOfStudents = () => lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson1.numeroEstudantes;
+const numberOfStudents = () => lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes;
 numberOfStudents()
 
 //requisito 7
