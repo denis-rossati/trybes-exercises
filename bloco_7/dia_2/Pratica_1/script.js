@@ -5,5 +5,4 @@ const criarObjeto = (objeto, chave, valor) => {
   objeto[chave] = valor;
   return objeto;
 }
-
 criarObjeto('const obj', 'nome', 'denis')

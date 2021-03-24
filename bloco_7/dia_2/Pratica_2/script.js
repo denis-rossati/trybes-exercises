@@ -4,7 +4,6 @@ const student1 = {
   JavaScript: 'Ótimo',
   SoftSkills: 'Ótimo',
 };
-
 const student2 = {
   Html: 'Bom',
   Css: 'Ótimo',
@@ -19,5 +18,4 @@ const listSkills = (student) => {
     console.log(`${arrayOfSkills[index]}, Nível: ${student[arrayOfSkills[index]]}`);
   }
 };
-
 listSkills(student1);
