@@ -14,3 +14,7 @@ function myRemoveWithoutCopy(arr, item) {
 
 // implemente seus testes aqui
 assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4], ('deveria retornar [1, 2, 4]'));
+assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4], 'a função não deveria retornar [1, 2, 3, 4]')
+
+let arrayTest = [1, 2, 3];
+assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3], 3), arrayTest, 'o array não sofreu alterações')
