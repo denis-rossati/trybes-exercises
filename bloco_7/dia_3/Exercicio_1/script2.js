@@ -20,5 +20,3 @@ myRemove(arrayTest, 2);
 assert.deepStrictEqual(arrayTest, [1, 2, 3])
 
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4])
-
-//ATUALIZE O LINKEDIN
