@@ -1,8 +1,8 @@
 const Fazerperfil = (name) => {
-  const firstName = name.split(' ');
+  const firstName = name.split(' ').join('_');
   const employeesInfo = {};
   employeesInfo.nomeCompleto = name;
-  employeesInfo.email = `${firstName[0]}@trybe.com`;
+  employeesInfo.email = `${firstName}@trybe.com`;
   return employeesInfo;
 }
 

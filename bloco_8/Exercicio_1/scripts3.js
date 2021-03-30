@@ -8,9 +8,9 @@ const createQ = (answer, question) => {
   const realAnswer = 'sim';
   const realQuestion  = 'teste';
   if (realAnswer === answer && realQuestion === question) {
-    return 'true';
+    return true;
   }
-  return 'false';
+  return false;
 }
 
 const sendA_sim = sendA('siM');

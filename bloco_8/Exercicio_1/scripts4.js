@@ -13,10 +13,7 @@ const calculateGrade = (feedback, userAnswer) => {
 
 const getInfo = (feedback, userAnswer, grade) => {
   for (let x = 0; x < feedback.length; x += 1) {
-    let iterateFeedback = feedback[x];
-    let iterateUserAnswer = userAnswer[x];
-    let counter = grade(iterateFeedback, iterateUserAnswer);
-    finalGrade += counter;
+    finalGrade += grade(feedback[x], userAnswer[x]);
   }
   return finalGrade;
 };
