@@ -63,16 +63,26 @@ const books = [
   },
 ];
 
-const expectedResult = [
-  'O Senhor dos Anéis',
-  'Fundação',
-  'O Chamado de Cthulhu',
-];
-
-function oldBooks() {
-  // escreva seu código aqui
-  const oldBooks = books.filter((book) => 2021 - book.releaseYear > 60)
-  return oldBooks.map(book => book.name)
+const expectedResult = 'O Senhor dos Anéis';
+const dots = (nome) => {
+  let validator = 0;
+  for (let x = 0; x < 8; x += 1) {
+    if (nome[x] === '.') {
+      validator += 1;
+    }
+  }
+  if (validator >= 3) {
+    return nome;
+  }
 }
-
-assert.deepStrictEqual(oldBooks(), expectedResult);
+function authorWith3DotsOnName() {
+  // escreva seu código aqui
+  //passar por todos os nomes
+  //iterar os nomes em busca de '.'
+  //se houver mais de 3 '.', retorne o nome
+  const author = books.filter((item) => dots(item.author.name));
+  const arrayTitles = author.map((item) => item.name)
+  return arrayTitles.join('');
+}
+authorWith3DotsOnName()
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
