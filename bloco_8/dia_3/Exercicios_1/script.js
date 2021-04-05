@@ -64,52 +64,35 @@ const books = [
 ];
 
 const expectedResult = [
- {
-    id: 1,
-    name: 'As Crônicas de Gelo e Fogo',
-    genre: 'Fantasia',
-    author: {
-      name: 'George R. R. Martin',
-      birthYear: 1948,
-    },
-    releaseYear: 1991,
-  },
   {
-    id: 2,
-    name: 'O Senhor dos Anéis',
-    genre: 'Fantasia',
-    author: {
-      name: 'J. R. R. Tolkien',
-      birthYear: 1892,
-    },
-    releaseYear: 1954,
+    id: 6,
+    name: 'O Chamado de Cthulhu',
+    genre: 'Terror',
+    author: { name: 'H. P. Lovecraft', birthYear: 1890 },
+    releaseYear: 1928,
   },
   {
     id: 3,
     name: 'Fundação',
     genre: 'Ficção Científica',
-    author: {
-      name: 'Isaac Asimov',
-      birthYear: 1920,
-    },
+    author: { name: 'Isaac Asimov', birthYear: 1920 },
     releaseYear: 1951,
   },
   {
-    id: 4,
-    name: 'Duna',
-    genre: 'Ficção Científica',
-    author: {
-      name: 'Frank Herbert',
-      birthYear: 1920,
-    },
-    releaseYear: 1965,
+    id: 2,
+    name: 'O Senhor dos Anéis',
+    genre: 'Fantasia',
+    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
+    releaseYear: 1954,
   },
 ];
 
-function fantasyOrScienceFiction() {
+function oldBooks() {
   // escreva seu código aqui
-  const fictionBooks = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia')
-  return fictionBooks;
+  const currentYear = 2021;
+  const oldBooks = books.filter((book) => currentYear - book.releaseYear > 60)
+  const oldSortedBooks = oldBooks.sort((a, b) => a.releaseYear - b.releaseYear)
+  return oldSortedBooks;
 }
 
-assert.deepStrictEqual(fantasyOrScienceFiction(), expectedResult);
+assert.deepStrictEqual(oldBooks(), expectedResult);
