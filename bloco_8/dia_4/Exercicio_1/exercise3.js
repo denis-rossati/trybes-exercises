@@ -1,4 +1,3 @@
-
 const assert = require('assert');
 
 const books = [
@@ -64,19 +63,16 @@ const books = [
   },
 ];
 
-const comparison = (stringVazia, book, index) =>{
-  if (index == books.length - 1) {
-    stringVazia += ` ${book.author.name}.` 
-  } else {
-    stringVazia += ` ${book.author.name},`
-  }
-  return stringVazia
-}
-const constructString = (stringVazia, book, index) => comparison(stringVazia, book, index);
+const expectedResult = 43;
 
-function allNames() {
+function averageAge() {
   // escreva seu código aqui
-  return  books.reduce(constructString, 'Nomes:')
+  //quis fazer tudo com reduce kkkk, mas o primeiro código que fiz está no comentario ali em baixo
+  //convenhamos, o ultimo código esta ligeiramente mais bonito...
+  const sumIdades = books.reduce((acc, book) => acc + (book.releaseYear - book.author.birthYear)/books.length, 0)
+  return parseInt(sumIdades);
 }
 
-assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');
+assert.strictEqual(averageAge(), expectedResult);
+//  const sumIdades = books.reduce((acc, book) => acc + (book.releaseYear - book.author.birthYear), 0)
+//  return sumIdades/books.length;
