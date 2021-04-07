@@ -1,9 +1,7 @@
 const assert = require('assert');
 
 // escreva greet abaixo
-const greet = (name, phrase = 'Hi') => {
-  return `${phrase} ${name}`
-}
+const greet = (name, phrase = 'Hi') => `${phrase} ${name}`;
 
 assert.strictEqual(greet('John'), 'Hi John');
 assert.strictEqual(greet('John', 'Good morning'), 'Good morning John');
