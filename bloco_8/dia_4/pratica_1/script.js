@@ -73,6 +73,7 @@ const estudantes = [
   },
 ];
 const melhoresNotas = (init, item) => init.nota > item.nota ? init : item;
-const materias = estudantes.map((elemento) => elemento.materias.reduce(melhoresNotas, 0))
-
-console.log(materias)
+const notasAltas = estudantes.map((elemento) => elemento.materias.reduce(melhoresNotas))
+const resultadoFinal = estudantes.reduce((acc, estudante, index) => {
+  return acc.concat({ nome: estudante.nome, materia: notasAltas[index].name})
+}, [])
