@@ -1,4 +1,4 @@
-const myRemoveWithoutCopy = require('./myRemoveWithoutCopy');
+const myRemoveWithoutCopy = require('../myRemoveWithoutCopy');
 
 /* Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado
 Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]

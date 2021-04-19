@@ -1,4 +1,4 @@
-const myRemove = require('./myRemove');
+const myRemove = require('../myRemove');
 
 describe('Testando a função myRemove', () => {
   const errorMessageNotExpected = 'O array passado por parametro não retorna o valor esperado'

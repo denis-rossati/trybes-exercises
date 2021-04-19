@@ -1,4 +1,4 @@
-const sum = require('./sum');
+const sum = require('../sum');
 
 describe('Testes do arquivo sum', () => {
   test('Testando a soma de 4 e 9, deve retornar 13', () => expect(sum(4, 9)).toBe(13));
