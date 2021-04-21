@@ -1,5 +1,4 @@
-const { expect } = require('@jest/globals');
-const getUserName = require('../exercicio2');
+const getUserName = require('../exercicios2-3');
 
 describe('Testing getUserName function', () => {
   it('should return "Mark"', () => {
