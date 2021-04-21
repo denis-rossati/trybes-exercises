@@ -12,8 +12,7 @@ describe('Testing function getRepos', () => {
   it('should check if there is a specific repo in the array', () => {
     const urlParam = 'https://api.github.com/orgs/tryber/repos';
     return getRepos(urlParam).then(response => {
-      expect.assertions(1)
-      return expect(response).toContain('sd-01-week4-5-project-todo-list')
+      expect(response).toContain('sd-01-week4-5-project-todo-list')
     })
   });
 });
@@ -22,8 +21,7 @@ describe('Testing function getRepos', () => {
   it('should check if there is a specific repo in the array', () => {
     const urlParam = 'https://api.github.com/orgs/tryber/repos';
     return getRepos(urlParam).then(response => {
-      expect.assertions(1)
-      return expect(response).toContain('sd-01-week4-5-project-meme-generator')
+      expect(response).toContain('sd-01-week4-5-project-meme-generator')
     })
   });
 });
