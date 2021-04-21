@@ -18,6 +18,22 @@ const getAnimal = (name) => {
   // Adicione o código aqui.
   return findAnimalByName(name).then(data => data);
 };
+
+
+const findAnimalByAge = (age) => (
+  new Promise ((resolve, reject) => {
+    if (Animals.find(item => item.age === age)) {
+      return resolve(Animals.find(item => item.age === age));
+    }
+    return reject('Por favor, vá embora')
+  })
+);
+
+const getByAge = (age) => {
+  return findAnimalByAge(age).then(response => response);
+
+}
+
 // ---------------------
 
 describe('Testando promise - findAnimalByName', () => {
@@ -37,3 +53,26 @@ describe('Testando promise - findAnimalByName', () => {
     });
   });
 });
+
+
+describe('Testando a funcao getByAge', () => {
+  
+  describe('Testando a busca por idade', () => {
+    it('Retorna o soneca', () => {
+      return getByAge(2).then(response => {
+        expect(response).toEqual({ name: 'Soneca', age: 2, type: 'Dog' })
+      });
+    });
+  });
+
+  describe('Testando a busca por quando a idade do animal transcende o plano terreno', () => {
+    it('Retorna ń̵̛̥̜̞͉̳̼̿̋͆̄͗̓̃̎̈́͝͝a̴̲̰̰͓̠̪̔̈́͋̋͆́͛͌̉͘͠͝d̸͇̻̜̻̤̙͉͌ͅͅạ̴͖̪̪͗̾̔̃͐̈́͂̆̀̕͘͝', () => {
+      return getByAge(666).catch(error => {
+        expect(error).toEqual('Por favor, vá embora');
+      });
+    });
+  });
+
+})
+
+
