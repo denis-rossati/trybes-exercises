@@ -84,7 +84,9 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(string) {
   const split = string.split('');
-  return split.filter((item) => typeof item === 'number');
+  const waterCups = string.split('').filter(Number).reduce((acc, at) => acc + Number(at) , 0);
+  if (waterCups > 1)  return `${waterCups} copos de água`
+  return `${waterCups} copo de água`
 }
 
 module.exports = {
