@@ -20,3 +20,24 @@ describe('testing other implementations', () => {
   it('should return 27',() => expect(script.randomNumber(3, 3, 3)).toBe(27));
   it('should return 4', () => expect(script.randomNumber(2)).toBe(4));
 });
+
+describe('#uppercase', () => {
+  script.uppercase = jest
+  .fn()
+  .mockImplementationOnce((str) => str.toLowerCase());
+  it('should return "algo"', () => expect(script.uppercase('ALGO')).toBe('algo'));
+})
+
+describe('#firstLetter', () => {
+  script.firstLetter = jest
+  .fn()
+  .mockImplementationOnce((str) => str[str.length - 1]);
+  it('should return "o"', () => expect(script.firstLetter('algo')).toBe('o'));
+})
+
+describe('#concatStr', () => {
+  script.concatStr = jest
+  .fn()
+  .mockImplementationOnce((a, b, c) => `${a}${b}${c}`);
+  it('should return "abc"', () => expect(script.concatStr('a', 'b', 'c')).toBe('abc'));
+})
