@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Form.css';
+import Input from './input';
 
 class Form extends Component {
   constructor() {
     super();
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleAgeChange = this.handleAgeChange.bind(this);
-    this.handleCheckChange = this.handleCheckChange.bind(this);
-    this.handleSelectChange = this.handleSelectChange.bind(this);
     this.state = {
       estadoFavorito: '',
       idade: 0,
@@ -16,33 +15,12 @@ class Form extends Component {
     };
   }
 
-  handleChange(event) {
+  handleChange({target}) {
+    const {name} = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    
     this.setState({
-      estadoFavorito: event.target.value,
-    });
-  }
-
-  handleAgeChange(event) {
-    this.setState({
-      idade: event.target.value
-    });
-  }
-
-  handleCheckChange() {
-    if(this.state.check === false) {
-      this.setState({
-        check: true,
-      })
-    } else {
-      this.setState({
-        check: false,
-      })
-    }
-  }
-
-  handleSelectChange(event) {
-    this.setState({
-      select: Number(event.target.value),
+      [name]: value,
     })
   }
 
@@ -50,33 +28,34 @@ class Form extends Component {
     return (
       <div>
         <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
+        <fieldset>
         <form className="form">
           <label>
             Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-              <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
+          <Input type='text' name='estadoFavorito' func={this.handleChange}/>
           </label>
           <input
-            type="number"
-            name="idade"
-            value={this.state.idade}
-            onChange={this.handleAgeChange}
-          />
-          <input
             type="checkbox"
-            name="vaiComparecer"
-            value={this.state.check}
-            onChange={this.handleCheckChange}
+            name="check"
+            className='checkbox'
+            onChange={this.handleChange}
           />
 
           <select
+          name='select'
           className='select'
-          onChange={this.handleSelectChange}
+          onChange={this.handleChange}
           >
           <option value={1}>1</option>
           <option value={2}>2</option>
           <option value={3}>3</option>
           </select>
+          <input
+          name='file'
+          type='file'
+          />
         </form>
+        </fieldset>
       </div>
     );
   }
