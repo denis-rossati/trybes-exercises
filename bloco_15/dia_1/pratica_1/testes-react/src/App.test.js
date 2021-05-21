@@ -39,23 +39,9 @@ describe('Testa se a funcionalidade de adicionar email funciona corretamente', (
     expect(isValid).toBeInTheDocument();
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   it('Testando um component, caso o email esteja vazio', () => {
     const EMAIL_USER = '';
-    const { getByText, getByTestId } = render(<ValidEmail email={EMAIL_USER}/>);
+    const { getByTestId } = render(<ValidEmail email={EMAIL_USER}/>);
     const valueResult = getByTestId('id-email-user');
     const warningMessage  = getByTestId('validation-email');
 
