@@ -52,23 +52,23 @@ A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno co
 ## Desenvolvimento Front-end
 
 <details>  
-  <Sumary>
+  <Summary>
     Desenvolvimento Front-end
-  </Sumary>  
+  </Summary>  
 </details>
 
 ## Desenvolvimento Back-end
 
 <details>
-  <Sumary>
+  <Summary>
     Desenvolvimento Back-end
-  </Sumary>  
+  </Summary>  
 </details>
 
 ## Ciência da Computação
 
 <details>
-  <Sumary>
+  <Summary>
     Ciência da Computação
-  </Sumary>  
+  </Summary>  
 </details>
