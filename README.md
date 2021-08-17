@@ -4,6 +4,8 @@ Durante minha tragetória na Trybe, tive que fazer diversos exercícios (os proj
 
 Nesse repositório vou separar o sumário por assunto. O número antes do assunto é referente ao bloco e o dia do assunto ([bloco].[dia]). Ex: 8.1 - JavaScript ES6 - Introdução a Higher Order Functions.
 
+Os dias não estão podem não estar em ordem (pular do dia 19.1 para o 19.4, por exemplo). Seja porque o dia não tenha exercícios ou seja porque eu não fiz.
+
 # O que é a Trybe?
 
 A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes. Com o Modelo de Sucesso Compartilhado, quem estuda na Trybe tem a opção de pagar apenas quando já estiver trabalhando. São mais de 1500 horas de formação que aborda fundamentos de desenvolvimentoweb, desenvolvimento, Front-end, Back-end, ciência da computação, engenharia de software,metodologias ágeis e habilidades comportamentais.
