@@ -1,0 +1,212 @@
+/* 
+use('example_db');
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "warehouses",
+      let: {
+        item_order: "$item",
+        order_qty: "$ordered",
+      },
+      pipeline: [
+        {
+          $match: {
+            $expr: {
+              $and: [
+                {
+                  $eq: ["$$item_order", "$stock_item",]
+                },
+                {
+                  $lte: ["$$order_qty", "$instock"]
+                },
+              ],
+            },
+          },
+        },
+        {
+          $project: {
+            _id: 0,
+            stock_item: 1,
+            instock: 1,
+          },
+        },
+      ],
+      as: 'stockdata',
+    }
+  }
+]);
+ */
+
+use('agg_example');
+/* db.clients.aggregate([
+  {
+    $lookup: {
+      from: "transactions",
+      let: { user_name: "$name" },
+      pipeline: [
+        {
+          $match: {
+            $expr: {
+              $eq: ["$from", "$$user_name"],
+            }
+          }
+        }
+      ],
+      as: "transactions"
+    },
+  },
+]); */
+
+/* db.clients.aggregate([
+  {
+    $lookup: {
+      from: "transactions",
+      let: { user_name: "$name" },
+      pipeline: [
+        {
+          $match: {
+            $expr: {
+              $eq: ["$from", "$$user_name"],
+            }
+          }
+        }
+      ],
+      as: "transactions"
+    },
+  },
+  {
+    $sort: {
+      State: 1,
+    },
+  },
+  {
+    $limit: 4,
+
+  },
+]); */
+
+/* db.clients.aggregate([
+  {
+    $match: {
+          State: "Florida",
+      },
+  },
+  {
+    $lookup: {
+      from: "transactions",
+      let: { user_received: "$to" },
+      pipeline: [
+        {
+          $match: {
+            $expr: {
+              $eq: ["$name", "$$user_received"],
+            },
+          },
+        },
+      ],
+      as: "transactions"
+    },
+  },
+  {
+    $sort: {
+      State: 1,
+    },
+  },
+]);  */
+
+use('agg_example');
+
+/* db.products.aggregate([
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      total_price: {
+        $add: [
+          "$taxes",
+          "$purchase_price",
+        ],
+      },
+    },
+  },
+]); */
+
+/* db.products.aggregate([
+  {
+    $project: {
+      _id: 0,
+      gain: {
+        $subtract: [
+          "$sale_price",
+          {
+            $add: [
+              "$purchase_price",
+              "$taxes"
+            ]
+          },
+        ],
+      },
+    },
+  },
+]); */
+
+/* db.products.aggregate([
+  {
+    $project: {
+      name: 1,
+      _id: 0,
+      sale_price: {
+        $floor: {
+          $add: [
+            "$taxes",
+            "$purchase_price"
+          ],
+        },
+      },   
+    },
+  },
+]); */
+
+/* db.products.aggregate([
+  {
+    $project: {
+      name: 1,
+      _id: 0,
+      sale_price: {
+        $ceil: {
+          $multiply: [
+            {
+              $add: [
+                "$taxes",
+                "$purchase_price",
+              ],
+            },
+            "$quantity"
+          ],
+        },
+      },   
+    },
+  },
+]); */
+
+/* db.products.aggregate([
+  {
+    $addFields: {
+      total_stock: {
+        $multiply: [
+          {
+            $add: [
+              "$sale_price",
+              "$taxes",
+            ],
+          },
+          "$quantity"
+        ],
+      },
+    },
+    $addFields: {
+      newField: "$sale_price",
+    }
+  },
+]); */
+
