@@ -1,0 +1,19 @@
+{
+  "name": "exercicios-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "sinon": "^11.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.0"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
