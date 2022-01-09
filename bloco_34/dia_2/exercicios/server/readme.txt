@@ -1,0 +1,1 @@
+the .pem files in this dir were created with the commands of the 7th exercise in exercicios.sh
