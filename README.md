@@ -193,7 +193,12 @@ A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno co
 
 ## Ciência da Computação
 
-### Introdução a Python
+<details>
+  <Summary>
+    Ciência da Computação
+  </Summary>  
+ 
+ ### Introdução a Python
 
 [32.1 - Aprendendo Python / Introdução a ciência da computação](https://github.com/denis-rossati/trybes-exercises/tree/exercises/32.1)
 
@@ -212,10 +217,5 @@ A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno co
 ### Algoritmos
 
 [35.1 - Complexidade de Algoritmos](https://github.com/denis-rossati/trybes-exercises/tree/exercises/34.3)
-
-<details>
-  <Summary>
-    Ciência da Computação
-  </Summary>  
  
 </details>
