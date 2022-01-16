@@ -1,10 +1,10 @@
 # O que é esse repositório?
 
-Durante minha tragetória na Trybe, tive que fazer diversos exercícios (os projetos estão em outro lugar, cheque meus repositórios no perfil), cada um desses exercícios pertence a um bloco diferente, que trata de um assunto específico. 
+Durante minha tragetória na Trybe, tive que fazer diversos exercícios (a maioria dos 40 projetos estão em repos privados), cada um desses exercícios pertence a um bloco diferente, que trata de um assunto específico.
 
 Nesse repositório vou separar o sumário por assunto. O número antes do assunto é referente ao bloco e o dia do assunto ([bloco].[dia]). Ex: 8.1 - JavaScript ES6 - Introdução a Higher Order Functions.
 
-Os dias não estão podem não estar em ordem (pular do dia 19.1 para o 19.4, por exemplo). Seja porque o dia não tenha exercícios ou seja porque eu não fiz.
+Os dias podem não estar em ordem (pular do dia 19.1 para o 19.4, por exemplo). Seja porque o dia não tenha exercícios ou seja porque eu não fiz.
 
 # O que é a Trybe?
 
@@ -163,9 +163,55 @@ A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno co
  
  [24.2 - Updates Complexos - Arrays - Parte 2](https://github.com/denis-rossati/trybes-exercises/tree/exercises/24.2).
  
+ ### Introdução ao desenvolvimento Web com Node.js
+ 
+ [25.2 - Node.js: fluxo assíncrono e testes](https://github.com/denis-rossati/trybes-exercises/tree/exercises/25.2)
+ 
+ ### Node.js: Camada de Serviço e Arquitetura Rest e Restful
+
+ [26.1 - Arquitetura de Software - Model](https://github.com/denis-rossati/trybes-exercises/tree/exercises/26.1)
+ 
+ [26.2 - Camada de Controller e Service](https://github.com/denis-rossati/trybes-exercises/tree/exercises/26.2)
+ 
+ [26.3 - Arquitetura Web - Rest e Restful](https://github.com/denis-rossati/trybes-exercises/tree/exercises/26.3)
+ 
+ [26.4 - Testando as Camadas](https://github.com/denis-rossati/trybes-exercises/tree/exercises/26.4)
+ 
+ ### Autenticação e Upload de Arquivos
+
+ [27.4 Upload de arquivos com `multer`](https://github.com/denis-rossati/trybes-exercises/tree/exercises/27.4)
+ 
+ ### Deployment
+ 
+ [28.1 - Deploy com Heroku](https://github.com/denis-rossati/trybes-exercises/tree/exercises/28.1)
+ 
+ ### Sockets
+ 
+ [30.3 - Socket.io](https://github.com/denis-rossati/trybes-exercises/tree/exercises/30.3)
+ 
 </details>
 
 ## Ciência da Computação
+
+### Introdução a Python
+
+[32.1 - Aprendendo Python / Introdução a ciência da computação](https://github.com/denis-rossati/trybes-exercises/tree/exercises/32.1)
+
+[32.2 - Entrada e Saída de Dados](https://github.com/denis-rossati/trybes-exercises/tree/exercises/32.2)
+
+###  Programação Orientada a Objetos e Padrões de Projeto
+
+[33.1 - Introdução à programação orientada a objetos](https://github.com/denis-rossati/trybes-exercises/tree/exercises/33.1)
+
+### Redes e Raspagem de Dados
+
+[34.1 - Arquitetura de redes](https://github.com/denis-rossati/trybes-exercises/tree/exercises/34.1)
+
+[34.2 - Redes de computadores, ferramentas e segurança](https://github.com/denis-rossati/trybes-exercises/tree/exercises/34.2)
+
+### Algoritmos
+
+[35.1 - Complexidade de Algoritmos](https://github.com/denis-rossati/trybes-exercises/tree/exercises/34.3)
 
 <details>
   <Summary>
